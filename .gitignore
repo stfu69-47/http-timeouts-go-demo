@@ -1,0 +1,13 @@
+/runs-new/
+/.venv/
+**/__pycache__/
+.DS_Store
+/http-timeout-lab/timeoutlab
+/http-timeout-lab/results-new/
+/http-timeout-lab/network/output/
+**/results/
+**/observations/
+**/*.jsonl
+**/*.pcap
+**/*.pcapng
+/runs/

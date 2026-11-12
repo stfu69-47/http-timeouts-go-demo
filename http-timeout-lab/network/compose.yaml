@@ -1,0 +1,44 @@
+services:
+  server:
+    image: timeoutlab-network:${LAB_PROJECT:?Start the lab with run.sh}
+    build:
+      context: ..
+      dockerfile: network/Dockerfile
+      args:
+        GO_VERSION: ${LAB_GO_VERSION:-1.27.4}
+    command: ["timeoutlab", "serve", "-listen", ":8080", "-header-delay", "5ms"]
+    init: true
+    cap_add: [NET_ADMIN, NET_RAW]
+    security_opt: ["no-new-privileges:true"]
+    networks: [lab]
+    healthcheck:
+      # The readiness marker avoids periodic TCP probes contaminating nstat.
+      test: ["CMD-SHELL", "test -f /tmp/timeoutlab-ready || (nc -z -w 1 127.0.0.1 8080 && touch /tmp/timeoutlab-ready)"]
+      interval: 1s
+      timeout: 2s
+      retries: 30
+      start_period: 2s
+    stop_grace_period: 5s
+
+  client:
+    image: timeoutlab-network:${LAB_PROJECT:?Start the lab with run.sh}
+    command: ["sleep", "infinity"]
+    init: true
+    cap_add: [NET_RAW]
+    security_opt: ["no-new-privileges:true"]
+    networks: [lab]
+    depends_on:
+      server:
+        condition: service_healthy
+    volumes:
+      - type: bind
+        source: ${LAB_OUTPUT_DIR:?Start the lab with run.sh}
+        target: /data
+        bind:
+          create_host_path: false
+    stop_grace_period: 5s
+
+networks:
+  lab:
+    driver: bridge
+    internal: true

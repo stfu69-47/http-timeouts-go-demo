@@ -1,0 +1,7 @@
+# Paths are relative to the Go module, the build context one level above network/.
+**
+!go.mod
+!*.go
+!network/
+!network/Dockerfile
+!network/Dockerfile.dockerignore
