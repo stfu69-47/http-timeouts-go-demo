@@ -1,0 +1,61 @@
+{
+  "recorded_at": "2026-11-12T12:31:44.342556+00:00",
+  "system": "Linux-7.2.12-orbstack-00394-gbecdd6130068-aarch64-with-glibc2.36",
+  "clock_ticks_per_second": 100,
+  "scope": "separate server process CPU; not host CPU",
+  "sampling": "ss every about 100ms; wall window includes final polling interval",
+  "runs": [
+    {
+      "case": "pool_1",
+      "requests": 100,
+      "concurrency": 8,
+      "max_conns_per_host": 1,
+      "handler_delay_ms": 25,
+      "elapsed_seconds": 2.854762805000064,
+      "server_cpu_seconds": 0.04,
+      "server_cpu_percent_one_logical_cpu": 1.4011671978470766,
+      "command": [
+        "/usr/local/bin/timeoutlab",
+        "probe",
+        "-url",
+        "http://127.0.0.1:50969/",
+        "-n",
+        "100",
+        "-c",
+        "8",
+        "-max-conns",
+        "1",
+        "-timeout",
+        "5s",
+        "-out",
+        "/work/runs/20261112T123100Z/observations/pool_1.jsonl"
+      ]
+    },
+    {
+      "case": "pool_8",
+      "requests": 100,
+      "concurrency": 8,
+      "max_conns_per_host": 8,
+      "handler_delay_ms": 25,
+      "elapsed_seconds": 0.4386988369988103,
+      "server_cpu_seconds": 0.01,
+      "server_cpu_percent_one_logical_cpu": 2.2794680898657407,
+      "command": [
+        "/usr/local/bin/timeoutlab",
+        "probe",
+        "-url",
+        "http://127.0.0.1:50969/",
+        "-n",
+        "100",
+        "-c",
+        "8",
+        "-max-conns",
+        "8",
+        "-timeout",
+        "5s",
+        "-out",
+        "/work/runs/20261112T123100Z/observations/pool_8.jsonl"
+      ]
+    }
+  ]
+}

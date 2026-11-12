@@ -10,4 +10,6 @@
 **/*.jsonl
 **/*.pcap
 **/*.pcapng
-/runs/
+/runs/*
+!/runs/20261112T123100Z/
+!/runs/20261112T123100Z/**

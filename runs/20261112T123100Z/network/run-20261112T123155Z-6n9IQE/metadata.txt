@@ -1,0 +1,14 @@
+started_utc=2026-11-12T12:31:55Z
+compose_project=timeoutlab-20261112123155-5898-26216
+output_dir=<KIT_ROOT>/runs/20261112T123100Z/network/run-20261112T123155Z-6n9IQE
+go_image_version=1.27.4
+requests_per_case=1000
+concurrency=8
+client_timeout=5s
+header_timeout=0
+dial_timeout=5s
+tls_timeout=5s
+case_wall_timeout_seconds=900
+load_model=closed_loop
+server_header_delay=5ms
+protocol=HTTP/1.1

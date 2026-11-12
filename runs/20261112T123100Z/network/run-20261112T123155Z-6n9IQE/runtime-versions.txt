@@ -1,0 +1,25 @@
+go version go1.27.4 linux/arm64
+Linux e33de59696a9 7.2.12-orbstack-00394-gbecdd6130068 #1 SMP PREEMPT Thu Oct 22 22:17:17 UTC 2026 aarch64 GNU/Linux
+tcpdump version 4.99.3
+libpcap version 1.10.3 (with TPACKET_V3)
+OpenSSL 3.0.22 25 Aug 2026
+Running as user "root" and group "root". This could be dangerous.
+TShark (Wireshark) 4.0.17 (Git v4.0.17 packaged as 4.0.17-0+deb12u3).
+
+Copyright 1998-2024 Gerald Combs <gerald@wireshark.org> and contributors.
+Licensed under the terms of the GNU General Public License (version 2 or later).
+This is free software; see the file named COPYING in the distribution. There is
+NO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Compiled (64-bit) using GCC 12.2.0, with GLib 2.74.6, with PCRE2, with zlib
+1.2.13, with libpcap, with POSIX capabilities (Linux), with libnl 3, with Lua
+5.2.4, with GnuTLS 3.7.9 and PKCS #11 support, with Gcrypt 1.10.1, with Kerberos
+(MIT), with MaxMind, with nghttp2 1.52.0, with brotli, with LZ4, with Zstandard,
+with Snappy, with libxml2 2.9.14, with libsmi 0.4.8, with binary plugins.
+
+Running on Linux 7.2.12-orbstack-00394-gbecdd6130068, with 8004 MB of physical
+memory, with GLib 2.74.6, with PCRE2 10.42 2022-12-11, with zlib 1.2.13, with
+libpcap 1.10.3 (with TPACKET_V3), with c-ares 1.18.1, with GnuTLS 3.7.9, with
+Gcrypt 1.10.1, with nghttp2 1.52.0, with brotli 1.0.9, with LZ4 1.9.4, with
+Zstandard 1.5.4, with libsmi 0.4.8, with LC_TYPE=C, binary plugins supported.
+tc utility, iproute2-6.1.0, libbpf 1.1.2

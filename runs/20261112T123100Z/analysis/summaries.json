@@ -1,0 +1,1605 @@
+{
+  "suite/baseline": {
+    "scenario": "baseline",
+    "requests": 200,
+    "completed_responses": 200,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 200
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 192,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 200,
+      "min_ms": 5.364833,
+      "p50_ms": 6.487333,
+      "p95_ms": 7.851625,
+      "p99_ms": 8.247708,
+      "max_ms": 8.485042
+    },
+    "latency_completed": {
+      "n": 200,
+      "min_ms": 5.364833,
+      "p50_ms": 6.487333,
+      "p95_ms": 7.851625,
+      "p99_ms": 8.247708,
+      "max_ms": 8.485042
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 200,
+      "min_ms": 5.356375,
+      "p50_ms": 6.47125,
+      "p95_ms": 7.597792,
+      "p99_ms": 8.176584,
+      "max_ms": 8.243625
+    },
+    "body": {
+      "n": 200,
+      "min_ms": 0.002958,
+      "p50_ms": 0.010584,
+      "p95_ms": 0.047666,
+      "p99_ms": 0.328291,
+      "max_ms": 1.267
+    },
+    "phases": {
+      "acquire": {
+        "n": 200,
+        "min_ms": 0.0012089999999999996,
+        "p50_ms": 0.0034579999999999993,
+        "p95_ms": 0.095625,
+        "p99_ms": 1.318667,
+        "max_ms": 1.512167
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 1.02325,
+        "p50_ms": 1.138708,
+        "p95_ms": 1.22075,
+        "p99_ms": 1.22075,
+        "max_ms": 1.22075
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 200,
+        "min_ms": 5.311708,
+        "p50_ms": 6.358459,
+        "p95_ms": 7.147708,
+        "p99_ms": 7.480667,
+        "max_ms": 7.662833
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/body_timeout": {
+    "scenario": "body_timeout",
+    "requests": 20,
+    "completed_responses": 0,
+    "io_errors": 20,
+    "do_errors": 0,
+    "body_errors": 20,
+    "close_errors": 0,
+    "timeouts": 20,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 20
+    },
+    "got_conn_new_events": 20,
+    "got_conn_reused_events": 0,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 20,
+      "min_ms": 50.059375,
+      "p50_ms": 50.359417,
+      "p95_ms": 52.134583,
+      "p99_ms": 52.468917,
+      "max_ms": 52.468917
+    },
+    "latency_completed": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "latency_errors": {
+      "n": 20,
+      "min_ms": 50.059375,
+      "p50_ms": 50.359417,
+      "p95_ms": 52.134583,
+      "p99_ms": 52.468917,
+      "max_ms": 52.468917
+    },
+    "headers": {
+      "n": 20,
+      "min_ms": 1.401083,
+      "p50_ms": 1.700917,
+      "p95_ms": 4.531667,
+      "p99_ms": 4.545875,
+      "max_ms": 4.545875
+    },
+    "body": {
+      "n": 20,
+      "min_ms": 45.791292,
+      "p50_ms": 48.594833,
+      "p95_ms": 50.622917,
+      "p99_ms": 50.672041,
+      "max_ms": 50.672041
+    },
+    "phases": {
+      "acquire": {
+        "n": 20,
+        "min_ms": 0.576625,
+        "p50_ms": 0.910708,
+        "p95_ms": 1.867792,
+        "p99_ms": 1.900625,
+        "max_ms": 1.900625
+      },
+      "connect": {
+        "n": 20,
+        "min_ms": 0.5492910000000001,
+        "p50_ms": 0.8654999999999999,
+        "p95_ms": 1.387708,
+        "p99_ms": 1.868208,
+        "max_ms": 1.868208
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 20,
+        "min_ms": 0.529917,
+        "p50_ms": 0.7107919999999999,
+        "p95_ms": 3.093875,
+        "p99_ms": 3.29125,
+        "max_ms": 3.29125
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/dns_delay": {
+    "scenario": "dns_delay",
+    "requests": 50,
+    "completed_responses": 50,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 50
+    },
+    "got_conn_new_events": 50,
+    "got_conn_reused_events": 0,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 50,
+      "min_ms": 29.5605,
+      "p50_ms": 30.95775,
+      "p95_ms": 31.865208,
+      "p99_ms": 32.457583,
+      "max_ms": 32.457583
+    },
+    "latency_completed": {
+      "n": 50,
+      "min_ms": 29.5605,
+      "p50_ms": 30.95775,
+      "p95_ms": 31.865208,
+      "p99_ms": 32.457583,
+      "max_ms": 32.457583
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 50,
+      "min_ms": 29.537208,
+      "p50_ms": 30.927875,
+      "p95_ms": 31.812916,
+      "p99_ms": 32.358625,
+      "max_ms": 32.358625
+    },
+    "body": {
+      "n": 50,
+      "min_ms": 0.021667,
+      "p50_ms": 0.034542,
+      "p95_ms": 0.083083,
+      "p99_ms": 0.17075,
+      "max_ms": 0.17075
+    },
+    "phases": {
+      "acquire": {
+        "n": 50,
+        "min_ms": 26.677542000000003,
+        "p50_ms": 27.841334,
+        "p95_ms": 28.476542,
+        "p99_ms": 29.032458000000002,
+        "max_ms": 29.032458000000002
+      },
+      "connect": {
+        "n": 50,
+        "min_ms": 0.37329200000000284,
+        "p50_ms": 0.483583000000003,
+        "p95_ms": 0.8635410000000014,
+        "p99_ms": 0.9092500000000001,
+        "max_ms": 0.9092500000000001
+      },
+      "dns": {
+        "n": 50,
+        "min_ms": 26.203083,
+        "p50_ms": 27.245666000000003,
+        "p95_ms": 27.611333000000002,
+        "p99_ms": 27.961416,
+        "max_ms": 27.961416
+      },
+      "request_to_first_byte": {
+        "n": 50,
+        "min_ms": 2.6957500000000003,
+        "p50_ms": 2.960750000000001,
+        "p95_ms": 3.1663749999999986,
+        "p99_ms": 3.2940000000000005,
+        "max_ms": 3.2940000000000005
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/header_timeout": {
+    "scenario": "header_timeout",
+    "requests": 20,
+    "completed_responses": 0,
+    "io_errors": 20,
+    "do_errors": 20,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 20,
+    "http_error_responses": 0,
+    "status_codes": {},
+    "got_conn_new_events": 20,
+    "got_conn_reused_events": 0,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 20,
+      "min_ms": 42.2085,
+      "p50_ms": 42.445209,
+      "p95_ms": 43.597125,
+      "p99_ms": 43.6045,
+      "max_ms": 43.6045
+    },
+    "latency_completed": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "latency_errors": {
+      "n": 20,
+      "min_ms": 42.2085,
+      "p50_ms": 42.445209,
+      "p95_ms": 43.597125,
+      "p99_ms": 43.6045,
+      "max_ms": 43.6045
+    },
+    "headers": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "body": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "phases": {
+      "acquire": {
+        "n": 20,
+        "min_ms": 0.699375,
+        "p50_ms": 1.1615,
+        "p95_ms": 2.592167,
+        "p99_ms": 2.759459,
+        "max_ms": 2.759459
+      },
+      "connect": {
+        "n": 20,
+        "min_ms": 0.654625,
+        "p50_ms": 1.101458,
+        "p95_ms": 2.538458,
+        "p99_ms": 2.6968330000000003,
+        "max_ms": 2.6968330000000003
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/pool_1": {
+    "scenario": "pool_1",
+    "requests": 100,
+    "completed_responses": 100,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 100
+    },
+    "got_conn_new_events": 1,
+    "got_conn_reused_events": 99,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 100,
+      "min_ms": 27.074,
+      "p50_ms": 212.654125,
+      "p95_ms": 269.9995,
+      "p99_ms": 271.328833,
+      "max_ms": 271.887042
+    },
+    "latency_completed": {
+      "n": 100,
+      "min_ms": 27.074,
+      "p50_ms": 212.654125,
+      "p95_ms": 269.9995,
+      "p99_ms": 271.328833,
+      "max_ms": 271.887042
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 100,
+      "min_ms": 27.063209,
+      "p50_ms": 212.524666,
+      "p95_ms": 269.988416,
+      "p99_ms": 271.314292,
+      "max_ms": 271.877625
+    },
+    "body": {
+      "n": 100,
+      "min_ms": 0.006875,
+      "p50_ms": 0.020167,
+      "p95_ms": 0.036,
+      "p99_ms": 1.097875,
+      "max_ms": 1.506667
+    },
+    "phases": {
+      "acquire": {
+        "n": 100,
+        "min_ms": 0.5103749999999999,
+        "p50_ms": 185.986583,
+        "p95_ms": 241.234083,
+        "p99_ms": 244.68279099999998,
+        "max_ms": 245.235208
+      },
+      "connect": {
+        "n": 1,
+        "min_ms": 0.47804099999999994,
+        "p50_ms": 0.47804099999999994,
+        "p95_ms": 0.47804099999999994,
+        "p99_ms": 0.47804099999999994,
+        "max_ms": 0.47804099999999994
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 100,
+        "min_ms": 25.413040999999993,
+        "p50_ms": 26.535083000000007,
+        "p95_ms": 27.04079200000001,
+        "p99_ms": 42.85754099999997,
+        "max_ms": 64.69179199999999
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/pool_8": {
+    "scenario": "pool_8",
+    "requests": 100,
+    "completed_responses": 100,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 100
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 92,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 100,
+      "min_ms": 25.68025,
+      "p50_ms": 27.044041,
+      "p95_ms": 29.126166,
+      "p99_ms": 29.881042,
+      "max_ms": 30.064166
+    },
+    "latency_completed": {
+      "n": 100,
+      "min_ms": 25.68025,
+      "p50_ms": 27.044041,
+      "p95_ms": 29.126166,
+      "p99_ms": 29.881042,
+      "max_ms": 30.064166
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 100,
+      "min_ms": 25.672208,
+      "p50_ms": 27.03625,
+      "p95_ms": 29.114208,
+      "p99_ms": 29.872417,
+      "max_ms": 30.05375
+    },
+    "body": {
+      "n": 100,
+      "min_ms": 0.006375,
+      "p50_ms": 0.010916,
+      "p95_ms": 0.034,
+      "p99_ms": 0.256916,
+      "max_ms": 0.518791
+    },
+    "phases": {
+      "acquire": {
+        "n": 100,
+        "min_ms": 0.0022500000000000003,
+        "p50_ms": 0.004083,
+        "p95_ms": 1.7885,
+        "p99_ms": 2.220875,
+        "max_ms": 2.522208
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 1.31075,
+        "p50_ms": 1.7629169999999998,
+        "p95_ms": 2.491417,
+        "p99_ms": 2.491417,
+        "max_ms": 2.491417
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 100,
+        "min_ms": 25.637,
+        "p50_ms": 26.903166,
+        "p95_ms": 28.070708,
+        "p99_ms": 28.469542,
+        "max_ms": 28.506874999999997
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/rare_body": {
+    "scenario": "rare_body",
+    "requests": 500,
+    "completed_responses": 500,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 500
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 492,
+    "fixture_slow_responses": 10,
+    "latency_all": {
+      "n": 500,
+      "min_ms": 5.405083,
+      "p50_ms": 6.511083,
+      "p95_ms": 8.468292,
+      "p99_ms": 307.30025,
+      "max_ms": 308.560958
+    },
+    "latency_completed": {
+      "n": 500,
+      "min_ms": 5.405083,
+      "p50_ms": 6.511083,
+      "p95_ms": 8.468292,
+      "p99_ms": 307.30025,
+      "max_ms": 308.560958
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 500,
+      "min_ms": 5.384666,
+      "p50_ms": 6.454334,
+      "p95_ms": 8.072417,
+      "p99_ms": 10.587583,
+      "max_ms": 15.489
+    },
+    "body": {
+      "n": 500,
+      "min_ms": 0.002375,
+      "p50_ms": 0.01325,
+      "p95_ms": 0.175125,
+      "p99_ms": 300.679291,
+      "max_ms": 301.464166
+    },
+    "phases": {
+      "acquire": {
+        "n": 500,
+        "min_ms": 0.0008749999999999999,
+        "p50_ms": 0.004458999999999999,
+        "p95_ms": 0.10929200000000001,
+        "p99_ms": 1.291625,
+        "max_ms": 1.7630839999999999
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 0.870459,
+        "p50_ms": 1.3235409999999999,
+        "p95_ms": 1.5153750000000001,
+        "p99_ms": 1.5153750000000001,
+        "max_ms": 1.5153750000000001
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 500,
+        "min_ms": 5.3267500000000005,
+        "p50_ms": 6.367833,
+        "p95_ms": 7.9712499999999995,
+        "p99_ms": 10.515917,
+        "max_ms": 15.4335
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/rare_headers": {
+    "scenario": "rare_headers",
+    "requests": 500,
+    "completed_responses": 500,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 500
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 492,
+    "fixture_slow_responses": 10,
+    "latency_all": {
+      "n": 500,
+      "min_ms": 5.323584,
+      "p50_ms": 6.194666,
+      "p95_ms": 7.724708,
+      "p99_ms": 306.331167,
+      "max_ms": 309.563834
+    },
+    "latency_completed": {
+      "n": 500,
+      "min_ms": 5.323584,
+      "p50_ms": 6.194666,
+      "p95_ms": 7.724708,
+      "p99_ms": 306.331167,
+      "max_ms": 309.563834
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 500,
+      "min_ms": 5.315292,
+      "p50_ms": 6.170875,
+      "p95_ms": 7.703625,
+      "p99_ms": 306.327875,
+      "max_ms": 309.55225
+    },
+    "body": {
+      "n": 500,
+      "min_ms": 0.002333,
+      "p50_ms": 0.009458,
+      "p95_ms": 0.075667,
+      "p99_ms": 0.338083,
+      "max_ms": 0.649334
+    },
+    "phases": {
+      "acquire": {
+        "n": 500,
+        "min_ms": 0.0009160000000000001,
+        "p50_ms": 0.003458000000000001,
+        "p95_ms": 0.03425,
+        "p99_ms": 1.2698749999999999,
+        "max_ms": 1.491959
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 1.146083,
+        "p50_ms": 1.2740420000000001,
+        "p95_ms": 1.36875,
+        "p99_ms": 1.36875,
+        "max_ms": 1.36875
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 500,
+        "min_ms": 5.294917,
+        "p50_ms": 6.111917,
+        "p95_ms": 7.265791,
+        "p99_ms": 306.295,
+        "max_ms": 309.525416
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "suite/tls_no_reuse": {
+    "scenario": "tls_no_reuse",
+    "requests": 100,
+    "completed_responses": 100,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 100
+    },
+    "got_conn_new_events": 100,
+    "got_conn_reused_events": 0,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 100,
+      "min_ms": 39.426125,
+      "p50_ms": 43.301292,
+      "p95_ms": 45.433125,
+      "p99_ms": 50.063125,
+      "max_ms": 51.606375
+    },
+    "latency_completed": {
+      "n": 100,
+      "min_ms": 39.426125,
+      "p50_ms": 43.301292,
+      "p95_ms": 45.433125,
+      "p99_ms": 50.063125,
+      "max_ms": 51.606375
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 100,
+      "min_ms": 39.362875,
+      "p50_ms": 43.23875,
+      "p95_ms": 45.269375,
+      "p99_ms": 50.045875,
+      "max_ms": 51.589291
+    },
+    "body": {
+      "n": 100,
+      "min_ms": 0.012459,
+      "p50_ms": 0.051417,
+      "p95_ms": 0.140333,
+      "p99_ms": 0.2025,
+      "max_ms": 0.21375
+    },
+    "phases": {
+      "acquire": {
+        "n": 100,
+        "min_ms": 33.003333999999995,
+        "p50_ms": 36.826874999999994,
+        "p95_ms": 38.778917,
+        "p99_ms": 43.803542,
+        "max_ms": 45.268542000000004
+      },
+      "connect": {
+        "n": 100,
+        "min_ms": 0.290875,
+        "p50_ms": 0.421167,
+        "p95_ms": 0.603791,
+        "p99_ms": 0.6274580000000001,
+        "max_ms": 0.722625
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 100,
+        "min_ms": 5.607500000000002,
+        "p50_ms": 6.271249999999995,
+        "p95_ms": 6.743832999999995,
+        "p99_ms": 7.470833000000006,
+        "max_ms": 7.664541999999997
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 100,
+        "min_ms": 32.551832999999995,
+        "p50_ms": 36.280625,
+        "p95_ms": 38.183292,
+        "p99_ms": 43.391417000000004,
+        "max_ms": 44.616375
+      }
+    }
+  },
+  "suite/tls_reuse": {
+    "scenario": "tls_reuse",
+    "requests": 100,
+    "completed_responses": 100,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 100
+    },
+    "got_conn_new_events": 1,
+    "got_conn_reused_events": 99,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 100,
+      "min_ms": 5.745209,
+      "p50_ms": 6.400334,
+      "p95_ms": 6.90575,
+      "p99_ms": 8.556334,
+      "max_ms": 45.020541
+    },
+    "latency_completed": {
+      "n": 100,
+      "min_ms": 5.745209,
+      "p50_ms": 6.400334,
+      "p95_ms": 6.90575,
+      "p99_ms": 8.556334,
+      "max_ms": 45.020541
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 100,
+      "min_ms": 5.722375,
+      "p50_ms": 6.372375,
+      "p95_ms": 6.878834,
+      "p99_ms": 8.532625,
+      "max_ms": 44.98725
+    },
+    "body": {
+      "n": 100,
+      "min_ms": 0.008666,
+      "p50_ms": 0.026166,
+      "p95_ms": 0.0435,
+      "p99_ms": 0.102666,
+      "max_ms": 0.127292
+    },
+    "phases": {
+      "acquire": {
+        "n": 100,
+        "min_ms": 0.0038749999999999982,
+        "p50_ms": 0.009542000000000002,
+        "p95_ms": 0.015625,
+        "p99_ms": 0.043875000000000004,
+        "max_ms": 38.22875
+      },
+      "connect": {
+        "n": 1,
+        "min_ms": 0.583167,
+        "p50_ms": 0.583167,
+        "p95_ms": 0.583167,
+        "p99_ms": 0.583167,
+        "max_ms": 0.583167
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 100,
+        "min_ms": 5.640417,
+        "p50_ms": 6.2680419999999994,
+        "p95_ms": 6.688625,
+        "p99_ms": 6.96725,
+        "max_ms": 8.454334
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 1,
+        "min_ms": 37.552291000000004,
+        "p50_ms": 37.552291000000004,
+        "p95_ms": 37.552291000000004,
+        "p99_ms": 37.552291000000004,
+        "max_ms": 37.552291000000004
+      }
+    }
+  },
+  "observations/pool_1": {
+    "scenario": "probe",
+    "requests": 100,
+    "completed_responses": 100,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 100
+    },
+    "got_conn_new_events": 1,
+    "got_conn_reused_events": 99,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 100,
+      "min_ms": 28.433393,
+      "p50_ms": 222.720242,
+      "p95_ms": 228.398912,
+      "p99_ms": 229.929935,
+      "max_ms": 230.76024
+    },
+    "latency_completed": {
+      "n": 100,
+      "min_ms": 28.433393,
+      "p50_ms": 222.720242,
+      "p95_ms": 228.398912,
+      "p99_ms": 229.929935,
+      "max_ms": 230.76024
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 100,
+      "min_ms": 28.407768,
+      "p50_ms": 222.667366,
+      "p95_ms": 228.363786,
+      "p99_ms": 229.904809,
+      "max_ms": 230.730656
+    },
+    "body": {
+      "n": 100,
+      "min_ms": 0.010375,
+      "p50_ms": 0.025083,
+      "p95_ms": 0.06746,
+      "p99_ms": 0.158003,
+      "max_ms": 0.175003
+    },
+    "phases": {
+      "acquire": {
+        "n": 100,
+        "min_ms": 0.154044,
+        "p50_ms": 194.26743000000002,
+        "p95_ms": 200.455317,
+        "p99_ms": 201.06253400000003,
+        "max_ms": 201.327247
+      },
+      "connect": {
+        "n": 1,
+        "min_ms": 0.098043,
+        "p50_ms": 0.098043,
+        "p95_ms": 0.098043,
+        "p99_ms": 0.098043,
+        "max_ms": 0.098043
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 100,
+        "min_ms": 25.35876300000001,
+        "p50_ms": 27.777467,
+        "p95_ms": 29.436450000000008,
+        "p99_ms": 29.579410999999993,
+        "max_ms": 30.19433699999999
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "observations/pool_8": {
+    "scenario": "probe",
+    "requests": 100,
+    "completed_responses": 100,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 100
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 92,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 100,
+      "min_ms": 25.880521,
+      "p50_ms": 28.721397,
+      "p95_ms": 30.310172,
+      "p99_ms": 30.469216,
+      "max_ms": 30.552467
+    },
+    "latency_completed": {
+      "n": 100,
+      "min_ms": 25.880521,
+      "p50_ms": 28.721397,
+      "p95_ms": 30.310172,
+      "p99_ms": 30.469216,
+      "max_ms": 30.552467
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 100,
+      "min_ms": 25.850396,
+      "p50_ms": 28.708189,
+      "p95_ms": 30.298672,
+      "p99_ms": 30.461383,
+      "max_ms": 30.545467
+    },
+    "body": {
+      "n": 100,
+      "min_ms": 0.005959,
+      "p50_ms": 0.010833,
+      "p95_ms": 0.108418,
+      "p99_ms": 0.162753,
+      "max_ms": 0.281713
+    },
+    "phases": {
+      "acquire": {
+        "n": 100,
+        "min_ms": 0.0022919999999999998,
+        "p50_ms": 0.0036250000000000015,
+        "p95_ms": 0.614468,
+        "p99_ms": 0.997265,
+        "max_ms": 1.220186
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 0.23079499999999997,
+        "p50_ms": 0.689677,
+        "p95_ms": 1.113184,
+        "p99_ms": 1.113184,
+        "max_ms": 1.113184
+      },
+      "dns": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "request_to_first_byte": {
+        "n": 100,
+        "min_ms": 25.514223,
+        "p50_ms": 28.611188,
+        "p95_ms": 30.262838,
+        "p99_ms": 30.391715,
+        "max_ms": 30.488884
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "network/baseline": {
+    "scenario": "probe",
+    "requests": 1000,
+    "completed_responses": 1000,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 1000
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 992,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 1000,
+      "min_ms": 5.152288,
+      "p50_ms": 6.785062,
+      "p95_ms": 8.961845,
+      "p99_ms": 10.168073,
+      "max_ms": 11.076753
+    },
+    "latency_completed": {
+      "n": 1000,
+      "min_ms": 5.152288,
+      "p50_ms": 6.785062,
+      "p95_ms": 8.961845,
+      "p99_ms": 10.168073,
+      "max_ms": 11.076753
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 1000,
+      "min_ms": 5.144038,
+      "p50_ms": 6.728936,
+      "p95_ms": 8.868345,
+      "p99_ms": 10.155281,
+      "max_ms": 11.067961
+    },
+    "body": {
+      "n": 1000,
+      "min_ms": 0.002333,
+      "p50_ms": 0.011292,
+      "p95_ms": 0.141961,
+      "p99_ms": 0.349047,
+      "max_ms": 1.547274
+    },
+    "phases": {
+      "acquire": {
+        "n": 1000,
+        "min_ms": 0.0009580000000000001,
+        "p50_ms": 0.004375,
+        "p95_ms": 0.07100100000000001,
+        "p99_ms": 0.552342,
+        "max_ms": 2.28616
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 0.17162699999999997,
+        "p50_ms": 0.284338,
+        "p95_ms": 0.42988099999999974,
+        "p99_ms": 0.42988099999999974,
+        "max_ms": 0.42988099999999974
+      },
+      "dns": {
+        "n": 8,
+        "min_ms": 1.578441,
+        "p50_ms": 1.73386,
+        "p95_ms": 1.872445,
+        "p99_ms": 1.872445,
+        "max_ms": 1.872445
+      },
+      "request_to_first_byte": {
+        "n": 1000,
+        "min_ms": 5.113536,
+        "p50_ms": 6.631935,
+        "p95_ms": 8.709717,
+        "p99_ms": 9.523313,
+        "max_ms": 10.3552
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "network/delay20ms-loss1pct": {
+    "scenario": "probe",
+    "requests": 1000,
+    "completed_responses": 1000,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 1000
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 992,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 1000,
+      "min_ms": 25.436722,
+      "p50_ms": 29.903833,
+      "p95_ms": 32.951545,
+      "p99_ms": 51.420329,
+      "max_ms": 259.310468
+    },
+    "latency_completed": {
+      "n": 1000,
+      "min_ms": 25.436722,
+      "p50_ms": 29.903833,
+      "p95_ms": 32.951545,
+      "p99_ms": 51.420329,
+      "max_ms": 259.310468
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 1000,
+      "min_ms": 25.411388,
+      "p50_ms": 29.825415,
+      "p95_ms": 32.823627,
+      "p99_ms": 51.363744,
+      "max_ms": 259.279884
+    },
+    "body": {
+      "n": 1000,
+      "min_ms": 0.002417,
+      "p50_ms": 0.019542,
+      "p95_ms": 0.234837,
+      "p99_ms": 0.502841,
+      "max_ms": 3.8676
+    },
+    "phases": {
+      "acquire": {
+        "n": 1000,
+        "min_ms": 0.0011250000000000001,
+        "p50_ms": 0.005207999999999999,
+        "p95_ms": 0.10779300000000001,
+        "p99_ms": 0.619967,
+        "max_ms": 23.264356
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 22.582679,
+        "p50_ms": 22.68393,
+        "p95_ms": 22.960894000000003,
+        "p99_ms": 22.960894000000003,
+        "max_ms": 22.960894000000003
+      },
+      "dns": {
+        "n": 8,
+        "min_ms": 0.13916900000000001,
+        "p50_ms": 0.302213,
+        "p95_ms": 0.485841,
+        "p99_ms": 0.485841,
+        "max_ms": 0.485841
+      },
+      "request_to_first_byte": {
+        "n": 1000,
+        "min_ms": 25.381389000000002,
+        "p50_ms": 29.694288,
+        "p95_ms": 32.699541999999994,
+        "p99_ms": 33.492179,
+        "max_ms": 259.167174
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "network/delay20ms": {
+    "scenario": "probe",
+    "requests": 1000,
+    "completed_responses": 1000,
+    "io_errors": 0,
+    "do_errors": 0,
+    "body_errors": 0,
+    "close_errors": 0,
+    "timeouts": 0,
+    "http_error_responses": 0,
+    "status_codes": {
+      "200": 1000
+    },
+    "got_conn_new_events": 8,
+    "got_conn_reused_events": 992,
+    "fixture_slow_responses": 0,
+    "latency_all": {
+      "n": 1000,
+      "min_ms": 25.454848,
+      "p50_ms": 30.230796,
+      "p95_ms": 32.803377,
+      "p99_ms": 33.775308,
+      "max_ms": 53.751614
+    },
+    "latency_completed": {
+      "n": 1000,
+      "min_ms": 25.454848,
+      "p50_ms": 30.230796,
+      "p95_ms": 32.803377,
+      "p99_ms": 33.775308,
+      "max_ms": 53.751614
+    },
+    "latency_errors": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "headers": {
+      "n": 1000,
+      "min_ms": 25.446098,
+      "p50_ms": 30.138836,
+      "p95_ms": 32.687333,
+      "p99_ms": 33.718807,
+      "max_ms": 53.732406
+    },
+    "body": {
+      "n": 1000,
+      "min_ms": 0.002042,
+      "p50_ms": 0.017792,
+      "p95_ms": 0.21842,
+      "p99_ms": 0.546841,
+      "max_ms": 1.813569
+    },
+    "phases": {
+      "acquire": {
+        "n": 1000,
+        "min_ms": 0.0008749999999999999,
+        "p50_ms": 0.005416999999999998,
+        "p95_ms": 0.11279299999999999,
+        "p99_ms": 1.3088950000000001,
+        "max_ms": 23.719279
+      },
+      "connect": {
+        "n": 8,
+        "min_ms": 22.318466,
+        "p50_ms": 22.638513,
+        "p95_ms": 23.074686,
+        "p99_ms": 23.074686,
+        "max_ms": 23.074686
+      },
+      "dns": {
+        "n": 8,
+        "min_ms": 0.280754,
+        "p50_ms": 0.603593,
+        "p95_ms": 0.724636,
+        "p99_ms": 0.724636,
+        "max_ms": 0.724636
+      },
+      "request_to_first_byte": {
+        "n": 1000,
+        "min_ms": 25.411222,
+        "p50_ms": 30.029251,
+        "p95_ms": 32.542539999999995,
+        "p99_ms": 33.131423,
+        "max_ms": 33.559220999999994
+      },
+      "resolver_socket": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "tls": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      }
+    }
+  }
+}

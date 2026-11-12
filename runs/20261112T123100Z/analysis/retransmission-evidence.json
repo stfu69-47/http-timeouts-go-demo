@@ -1,0 +1,142 @@
+[
+  {
+    "case": "delay20ms-loss1pct",
+    "id": 61,
+    "duration_ms": 257.150227,
+    "tuple": [
+      "192.168.107.3",
+      "53156",
+      "192.168.107.2",
+      "8080"
+    ],
+    "client_stream": "3",
+    "server_stream": "3",
+    "request_frames_client": [
+      "156",
+      "246"
+    ],
+    "request_frames_server": [
+      "155",
+      "246"
+    ],
+    "response_frame_client": "260",
+    "response_frame_server": "260",
+    "request_seq": 13785717,
+    "request_len": 114,
+    "response_seq": 3330638637,
+    "response_ack": 13785831,
+    "response_len": 185,
+    "request_retransmissions": 1,
+    "request_to_response_capture_ms": 256.9758892059326,
+    "server_request_to_response_capture_ms": 256.9129467010498,
+    "retry_after_ms": 235.58497428894043,
+    "first_request_epoch": 1794486731.575709,
+    "response_epoch": 1794486731.832685,
+    "response_ack_frame_client": "264"
+  },
+  {
+    "case": "delay20ms-loss1pct",
+    "id": 64,
+    "duration_ms": 257.077642,
+    "tuple": [
+      "192.168.107.3",
+      "53146",
+      "192.168.107.2",
+      "8080"
+    ],
+    "client_stream": "1",
+    "server_stream": "1",
+    "request_frames_client": [
+      "158",
+      "245"
+    ],
+    "request_frames_server": [
+      "158",
+      "245"
+    ],
+    "response_frame_client": "259",
+    "response_frame_server": "259",
+    "request_seq": 2717953307,
+    "request_len": 114,
+    "response_seq": 2257530869,
+    "response_ack": 2717953421,
+    "response_len": 185,
+    "request_retransmissions": 1,
+    "request_to_response_capture_ms": 256.90412521362305,
+    "server_request_to_response_capture_ms": 256.85906410217285,
+    "retry_after_ms": 235.52703857421875,
+    "first_request_epoch": 1794486731.57576,
+    "response_epoch": 1794486731.832664,
+    "response_ack_frame_client": "263"
+  },
+  {
+    "case": "delay20ms-loss1pct",
+    "id": 634,
+    "duration_ms": 256.773638,
+    "tuple": [
+      "192.168.107.3",
+      "53174",
+      "192.168.107.2",
+      "8080"
+    ],
+    "client_stream": "5",
+    "server_stream": "6",
+    "request_frames_client": [
+      "1306",
+      "1405"
+    ],
+    "request_frames_server": [
+      "1306",
+      "1405"
+    ],
+    "response_frame_client": "1420",
+    "response_frame_server": "1420",
+    "request_seq": 920957236,
+    "request_len": 115,
+    "response_seq": 852170686,
+    "response_ack": 920957351,
+    "response_len": 185,
+    "request_retransmissions": 1,
+    "request_to_response_capture_ms": 256.6039562225342,
+    "server_request_to_response_capture_ms": 256.55293464660645,
+    "retry_after_ms": 235.9299659729004,
+    "first_request_epoch": 1794486733.759015,
+    "response_epoch": 1794486734.015619,
+    "response_ack_frame_client": "1422"
+  },
+  {
+    "case": "delay20ms-loss1pct",
+    "id": 886,
+    "duration_ms": 259.310468,
+    "tuple": [
+      "192.168.107.3",
+      "53198",
+      "192.168.107.2",
+      "8080"
+    ],
+    "client_stream": "7",
+    "server_stream": "7",
+    "request_frames_client": [
+      "1816",
+      "1929"
+    ],
+    "request_frames_server": [
+      "1816",
+      "1929"
+    ],
+    "response_frame_client": "1937",
+    "response_frame_server": "1937",
+    "request_seq": 2881681749,
+    "request_len": 115,
+    "response_seq": 3326809083,
+    "response_ack": 2881681864,
+    "response_len": 185,
+    "request_retransmissions": 1,
+    "request_to_response_capture_ms": 259.0658664703369,
+    "server_request_to_response_capture_ms": 259.0169906616211,
+    "retry_after_ms": 234.11297798156738,
+    "first_request_epoch": 1794486734.75461,
+    "response_epoch": 1794486735.013676,
+    "response_ack_frame_client": "1939"
+  }
+]

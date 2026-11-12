@@ -1,0 +1,7 @@
+{
+  "sources": {
+    "analysis/network-analysis.json": "3e141927eb24201d2d58b7a18f90868b641ce37c771e58f2d6097a3ef946effd",
+    "analysis/delay20ms-loss1pct.request-packet-links.json": "711f51e912b2600626dbacabc0e4bc90084a65b4496c9201e4fdd692b81320b2"
+  },
+  "method": "nearest rank of all attempts; scatter each duration_ms; highlight TCP repeated request payload and sequence mapped by four tuple + X-Lab-Request-ID"
+}

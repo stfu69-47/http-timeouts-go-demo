@@ -1,0 +1,1702 @@
+{
+  "baseline": {
+    "summary": {
+      "scenario": "probe",
+      "requests": 1000,
+      "completed_responses": 1000,
+      "io_errors": 0,
+      "do_errors": 0,
+      "body_errors": 0,
+      "close_errors": 0,
+      "timeouts": 0,
+      "http_error_responses": 0,
+      "status_codes": {
+        "200": 1000
+      },
+      "got_conn_new_events": 8,
+      "got_conn_reused_events": 992,
+      "fixture_slow_responses": 0,
+      "latency_all": {
+        "n": 1000,
+        "min_ms": 5.152288,
+        "p50_ms": 6.785062,
+        "p95_ms": 8.961845,
+        "p99_ms": 10.168073,
+        "max_ms": 11.076753
+      },
+      "latency_completed": {
+        "n": 1000,
+        "min_ms": 5.152288,
+        "p50_ms": 6.785062,
+        "p95_ms": 8.961845,
+        "p99_ms": 10.168073,
+        "max_ms": 11.076753
+      },
+      "latency_errors": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "headers": {
+        "n": 1000,
+        "min_ms": 5.144038,
+        "p50_ms": 6.728936,
+        "p95_ms": 8.868345,
+        "p99_ms": 10.155281,
+        "max_ms": 11.067961
+      },
+      "body": {
+        "n": 1000,
+        "min_ms": 0.002333,
+        "p50_ms": 0.011292,
+        "p95_ms": 0.141961,
+        "p99_ms": 0.349047,
+        "max_ms": 1.547274
+      },
+      "phases": {
+        "acquire": {
+          "n": 1000,
+          "min_ms": 0.0009580000000000001,
+          "p50_ms": 0.004375,
+          "p95_ms": 0.07100100000000001,
+          "p99_ms": 0.552342,
+          "max_ms": 2.28616
+        },
+        "connect": {
+          "n": 8,
+          "min_ms": 0.17162699999999997,
+          "p50_ms": 0.284338,
+          "p95_ms": 0.42988099999999974,
+          "p99_ms": 0.42988099999999974,
+          "max_ms": 0.42988099999999974
+        },
+        "dns": {
+          "n": 8,
+          "min_ms": 1.578441,
+          "p50_ms": 1.73386,
+          "p95_ms": 1.872445,
+          "p99_ms": 1.872445,
+          "max_ms": 1.872445
+        },
+        "request_to_first_byte": {
+          "n": 1000,
+          "min_ms": 5.113536,
+          "p50_ms": 6.631935,
+          "p95_ms": 8.709717,
+          "p99_ms": 9.523313,
+          "max_ms": 10.3552
+        },
+        "resolver_socket": {
+          "n": 0,
+          "min_ms": null,
+          "p50_ms": null,
+          "p95_ms": null,
+          "p99_ms": null,
+          "max_ms": null
+        },
+        "tls": {
+          "n": 0,
+          "min_ms": null,
+          "p50_ms": null,
+          "p95_ms": null,
+          "p99_ms": null,
+          "max_ms": null
+        }
+      }
+    },
+    "retransmitted_requests": 0,
+    "retry_latency": {
+      "n": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "no_retry_latency": {
+      "n": 1000,
+      "p50_ms": 6.785062,
+      "p95_ms": 8.961845,
+      "p99_ms": 10.168073,
+      "max_ms": 11.076753
+    },
+    "captures": [
+      {
+        "case": "baseline",
+        "side": "client",
+        "pcap_frames": 2040,
+        "captured": 2040,
+        "received_by_filter": 2064,
+        "dropped_by_kernel": 0,
+        "retransmission_frames": 0,
+        "http_ids": 1000,
+        "response_frames": 1000,
+        "sha256": "8bd0ad740fcce8f9347e0b1f776bfdf8f7197461cf738586ad2d50d00a0112e2"
+      },
+      {
+        "case": "baseline",
+        "side": "server",
+        "pcap_frames": 2040,
+        "captured": 2040,
+        "received_by_filter": 2064,
+        "dropped_by_kernel": 0,
+        "retransmission_frames": 0,
+        "http_ids": 1000,
+        "response_frames": 1000,
+        "sha256": "b666278972b366ff6781488e9f4e621a37b22cc69370254d1a053306184a8d01"
+      }
+    ],
+    "counters": {
+      "client": {
+        "TcpRetransSegs": 0,
+        "TcpExtTCPTimeouts": 0,
+        "TcpExtTCPLossProbes": 0,
+        "TcpExtTCPLossProbeRecovery": 0,
+        "TcpExtTCPSynRetrans": 0
+      },
+      "server": {
+        "TcpRetransSegs": 0,
+        "TcpExtTCPTimeouts": 0,
+        "TcpExtTCPLossProbes": 0,
+        "TcpExtTCPLossProbeRecovery": 0,
+        "TcpExtTCPSynRetrans": 0
+      }
+    },
+    "slowest": [
+      {
+        "case": "baseline",
+        "id": 951,
+        "duration_ms": 11.076753,
+        "tuple": [
+          "192.168.107.3",
+          "43534",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "3",
+        "server_stream": "0",
+        "request_frames_client": [
+          "1937"
+        ],
+        "request_frames_server": [
+          "1937"
+        ],
+        "response_frame_client": "1952",
+        "response_frame_server": "1952",
+        "request_seq": 3317130925,
+        "request_len": 115,
+        "response_seq": 1722923873,
+        "response_ack": 3317131040,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 10.155916213989258,
+        "server_request_to_response_capture_ms": 10.143041610717773,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486723.495016,
+        "response_epoch": 1794486723.505172,
+        "response_ack_frame_client": "1956"
+      },
+      {
+        "case": "baseline",
+        "id": 1,
+        "duration_ms": 10.579412,
+        "tuple": [
+          "192.168.107.3",
+          "43530",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "2",
+        "server_stream": "3",
+        "request_frames_client": [
+          "30"
+        ],
+        "request_frames_server": [
+          "29"
+        ],
+        "response_frame_client": "49",
+        "response_frame_server": "49",
+        "request_seq": 2825589057,
+        "request_len": 113,
+        "response_seq": 1054517003,
+        "response_ack": 2825589170,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.20612907409668,
+        "server_request_to_response_capture_ms": 8.203983306884766,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674847,
+        "response_epoch": 1794486722.683053,
+        "response_ack_frame_client": "50"
+      },
+      {
+        "case": "baseline",
+        "id": 3,
+        "duration_ms": 10.50441,
+        "tuple": [
+          "192.168.107.3",
+          "43544",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "5",
+        "server_stream": "5",
+        "request_frames_client": [
+          "27"
+        ],
+        "request_frames_server": [
+          "27"
+        ],
+        "response_frame_client": "43",
+        "response_frame_server": "43",
+        "request_seq": 1310264788,
+        "request_len": 113,
+        "response_seq": 193131043,
+        "response_ack": 1310264901,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.181095123291016,
+        "server_request_to_response_capture_ms": 8.167028427124023,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674829,
+        "response_epoch": 1794486722.68301,
+        "response_ack_frame_client": "44"
+      },
+      {
+        "case": "baseline",
+        "id": 5,
+        "duration_ms": 10.441701,
+        "tuple": [
+          "192.168.107.3",
+          "43552",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "7",
+        "server_stream": "7",
+        "request_frames_client": [
+          "25"
+        ],
+        "request_frames_server": [
+          "25"
+        ],
+        "response_frame_client": "59",
+        "response_frame_server": "57",
+        "request_seq": 804592965,
+        "request_len": 113,
+        "response_seq": 173024267,
+        "response_ack": 804593078,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.327960968017578,
+        "server_request_to_response_capture_ms": 8.298873901367188,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674815,
+        "response_epoch": 1794486722.683143,
+        "response_ack_frame_client": "62"
+      },
+      {
+        "case": "baseline",
+        "id": 4,
+        "duration_ms": 10.401076,
+        "tuple": [
+          "192.168.107.3",
+          "43514",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "1",
+        "server_stream": "2",
+        "request_frames_client": [
+          "34"
+        ],
+        "request_frames_server": [
+          "35"
+        ],
+        "response_frame_client": "52",
+        "response_frame_server": "52",
+        "request_seq": 3656320264,
+        "request_len": 113,
+        "response_seq": 2704064603,
+        "response_ack": 3656320377,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.200883865356445,
+        "server_request_to_response_capture_ms": 8.198022842407227,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674868,
+        "response_epoch": 1794486722.683069,
+        "response_ack_frame_client": "53"
+      },
+      {
+        "case": "baseline",
+        "id": 952,
+        "duration_ms": 10.367951,
+        "tuple": [
+          "192.168.107.3",
+          "43546",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "6",
+        "server_stream": "6",
+        "request_frames_client": [
+          "1938"
+        ],
+        "request_frames_server": [
+          "1938"
+        ],
+        "response_frame_client": "1950",
+        "response_frame_server": "1950",
+        "request_seq": 3792695841,
+        "request_len": 115,
+        "response_seq": 221282088,
+        "response_ack": 3792695956,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 9.931087493896484,
+        "server_request_to_response_capture_ms": 9.912967681884766,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486723.495158,
+        "response_epoch": 1794486723.505089,
+        "response_ack_frame_client": "1954"
+      },
+      {
+        "case": "baseline",
+        "id": 7,
+        "duration_ms": 10.348116,
+        "tuple": [
+          "192.168.107.3",
+          "43546",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "6",
+        "server_stream": "6",
+        "request_frames_client": [
+          "36"
+        ],
+        "request_frames_server": [
+          "37"
+        ],
+        "response_frame_client": "54",
+        "response_frame_server": "54",
+        "request_seq": 3792682285,
+        "request_len": 113,
+        "response_seq": 221260258,
+        "response_ack": 3792682398,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.209943771362305,
+        "server_request_to_response_capture_ms": 8.199930191040039,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674871,
+        "response_epoch": 1794486722.683081,
+        "response_ack_frame_client": "55"
+      },
+      {
+        "case": "baseline",
+        "id": 6,
+        "duration_ms": 10.341367,
+        "tuple": [
+          "192.168.107.3",
+          "43540",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "4",
+        "server_stream": "4",
+        "request_frames_client": [
+          "29"
+        ],
+        "request_frames_server": [
+          "31"
+        ],
+        "response_frame_client": "45",
+        "response_frame_server": "45",
+        "request_seq": 2913345622,
+        "request_len": 113,
+        "response_seq": 2214132108,
+        "response_ack": 2913345735,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.179903030395508,
+        "server_request_to_response_capture_ms": 8.17108154296875,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674845,
+        "response_epoch": 1794486722.683025,
+        "response_ack_frame_client": "46"
+      },
+      {
+        "case": "baseline",
+        "id": 8,
+        "duration_ms": 10.309157,
+        "tuple": [
+          "192.168.107.3",
+          "43506",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "0",
+        "server_stream": "1",
+        "request_frames_client": [
+          "32"
+        ],
+        "request_frames_server": [
+          "33"
+        ],
+        "response_frame_client": "47",
+        "response_frame_server": "47",
+        "request_seq": 3591947062,
+        "request_len": 113,
+        "response_seq": 3888778037,
+        "response_ack": 3591947175,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.187055587768555,
+        "server_request_to_response_capture_ms": 8.179187774658203,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674855,
+        "response_epoch": 1794486722.683042,
+        "response_ack_frame_client": "48"
+      },
+      {
+        "case": "baseline",
+        "id": 2,
+        "duration_ms": 10.301491,
+        "tuple": [
+          "192.168.107.3",
+          "43534",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "3",
+        "server_stream": "0",
+        "request_frames_client": [
+          "39"
+        ],
+        "request_frames_server": [
+          "39"
+        ],
+        "response_frame_client": "41",
+        "response_frame_server": "41",
+        "request_seq": 3317117369,
+        "request_len": 113,
+        "response_seq": 1722902043,
+        "response_ack": 3317117482,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 7.968902587890625,
+        "server_request_to_response_capture_ms": 7.951021194458008,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486722.674962,
+        "response_epoch": 1794486722.682931,
+        "response_ack_frame_client": "42"
+      },
+      {
+        "case": "baseline",
+        "id": 953,
+        "duration_ms": 10.168073,
+        "tuple": [
+          "192.168.107.3",
+          "43544",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "5",
+        "server_stream": "5",
+        "request_frames_client": [
+          "1939"
+        ],
+        "request_frames_server": [
+          "1939"
+        ],
+        "response_frame_client": "1949",
+        "response_frame_server": "1949",
+        "request_seq": 1310278345,
+        "request_len": 115,
+        "response_seq": 193152873,
+        "response_ack": 1310278460,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 9.890079498291016,
+        "server_request_to_response_capture_ms": 9.857892990112305,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486723.49519,
+        "response_epoch": 1794486723.50508,
+        "response_ack_frame_client": "1953"
+      },
+      {
+        "case": "baseline",
+        "id": 515,
+        "duration_ms": 10.11353,
+        "tuple": [
+          "192.168.107.3",
+          "43544",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "5",
+        "server_stream": "5",
+        "request_frames_client": [
+          "1067"
+        ],
+        "request_frames_server": [
+          "1067"
+        ],
+        "response_frame_client": "1078",
+        "response_frame_server": "1078",
+        "request_seq": 1310272135,
+        "request_len": 115,
+        "response_seq": 193142883,
+        "response_ack": 1310272250,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 8.162975311279297,
+        "server_request_to_response_capture_ms": 8.152008056640625,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486723.121304,
+        "response_epoch": 1794486723.129467,
+        "response_ack_frame_client": "1085"
+      }
+    ]
+  },
+  "delay20ms": {
+    "summary": {
+      "scenario": "probe",
+      "requests": 1000,
+      "completed_responses": 1000,
+      "io_errors": 0,
+      "do_errors": 0,
+      "body_errors": 0,
+      "close_errors": 0,
+      "timeouts": 0,
+      "http_error_responses": 0,
+      "status_codes": {
+        "200": 1000
+      },
+      "got_conn_new_events": 8,
+      "got_conn_reused_events": 992,
+      "fixture_slow_responses": 0,
+      "latency_all": {
+        "n": 1000,
+        "min_ms": 25.454848,
+        "p50_ms": 30.230796,
+        "p95_ms": 32.803377,
+        "p99_ms": 33.775308,
+        "max_ms": 53.751614
+      },
+      "latency_completed": {
+        "n": 1000,
+        "min_ms": 25.454848,
+        "p50_ms": 30.230796,
+        "p95_ms": 32.803377,
+        "p99_ms": 33.775308,
+        "max_ms": 53.751614
+      },
+      "latency_errors": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "headers": {
+        "n": 1000,
+        "min_ms": 25.446098,
+        "p50_ms": 30.138836,
+        "p95_ms": 32.687333,
+        "p99_ms": 33.718807,
+        "max_ms": 53.732406
+      },
+      "body": {
+        "n": 1000,
+        "min_ms": 0.002042,
+        "p50_ms": 0.017792,
+        "p95_ms": 0.21842,
+        "p99_ms": 0.546841,
+        "max_ms": 1.813569
+      },
+      "phases": {
+        "acquire": {
+          "n": 1000,
+          "min_ms": 0.0008749999999999999,
+          "p50_ms": 0.005416999999999998,
+          "p95_ms": 0.11279299999999999,
+          "p99_ms": 1.3088950000000001,
+          "max_ms": 23.719279
+        },
+        "connect": {
+          "n": 8,
+          "min_ms": 22.318466,
+          "p50_ms": 22.638513,
+          "p95_ms": 23.074686,
+          "p99_ms": 23.074686,
+          "max_ms": 23.074686
+        },
+        "dns": {
+          "n": 8,
+          "min_ms": 0.280754,
+          "p50_ms": 0.603593,
+          "p95_ms": 0.724636,
+          "p99_ms": 0.724636,
+          "max_ms": 0.724636
+        },
+        "request_to_first_byte": {
+          "n": 1000,
+          "min_ms": 25.411222,
+          "p50_ms": 30.029251,
+          "p95_ms": 32.542539999999995,
+          "p99_ms": 33.131423,
+          "max_ms": 33.559220999999994
+        },
+        "resolver_socket": {
+          "n": 0,
+          "min_ms": null,
+          "p50_ms": null,
+          "p95_ms": null,
+          "p99_ms": null,
+          "max_ms": null
+        },
+        "tls": {
+          "n": 0,
+          "min_ms": null,
+          "p50_ms": null,
+          "p95_ms": null,
+          "p99_ms": null,
+          "max_ms": null
+        }
+      }
+    },
+    "retransmitted_requests": 0,
+    "retry_latency": {
+      "n": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "no_retry_latency": {
+      "n": 1000,
+      "p50_ms": 30.230796,
+      "p95_ms": 32.803377,
+      "p99_ms": 33.775308,
+      "max_ms": 53.751614
+    },
+    "captures": [
+      {
+        "case": "delay20ms",
+        "side": "client",
+        "pcap_frames": 2040,
+        "captured": 2040,
+        "received_by_filter": 2064,
+        "dropped_by_kernel": 0,
+        "retransmission_frames": 0,
+        "http_ids": 1000,
+        "response_frames": 1000,
+        "sha256": "2a9d2dbb8ac3ffd13ed407171c89d8f4f5e0aa4a81274f3d0f3b362088849236"
+      },
+      {
+        "case": "delay20ms",
+        "side": "server",
+        "pcap_frames": 2040,
+        "captured": 2040,
+        "received_by_filter": 2064,
+        "dropped_by_kernel": 0,
+        "retransmission_frames": 0,
+        "http_ids": 1000,
+        "response_frames": 1000,
+        "sha256": "c69c7438a0fc283e9a0f515f560883ce04b258e709a7011b37f038cfc4db2f07"
+      }
+    ],
+    "counters": {
+      "client": {
+        "TcpRetransSegs": 0,
+        "TcpExtTCPTimeouts": 0,
+        "TcpExtTCPLossProbes": 0,
+        "TcpExtTCPLossProbeRecovery": 0,
+        "TcpExtTCPSynRetrans": 0
+      },
+      "server": {
+        "TcpRetransSegs": 0,
+        "TcpExtTCPTimeouts": 0,
+        "TcpExtTCPLossProbes": 0,
+        "TcpExtTCPLossProbeRecovery": 0,
+        "TcpExtTCPSynRetrans": 0
+      }
+    },
+    "slowest": [
+      {
+        "case": "delay20ms",
+        "id": 5,
+        "duration_ms": 53.751614,
+        "tuple": [
+          "192.168.107.3",
+          "43606",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "5",
+        "server_stream": "5",
+        "request_frames_client": [
+          "27"
+        ],
+        "request_frames_server": [
+          "27"
+        ],
+        "response_frame_client": "53",
+        "response_frame_server": "47",
+        "request_seq": 3190886727,
+        "request_len": 113,
+        "response_seq": 1434136976,
+        "response_ack": 3190886840,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 29.095172882080078,
+        "server_request_to_response_capture_ms": 28.95379066467285,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.617025,
+        "response_epoch": 1794486725.64612,
+        "response_ack_frame_client": "54"
+      },
+      {
+        "case": "delay20ms",
+        "id": 7,
+        "duration_ms": 53.392109,
+        "tuple": [
+          "192.168.107.3",
+          "43628",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "7",
+        "server_stream": "7",
+        "request_frames_client": [
+          "29"
+        ],
+        "request_frames_server": [
+          "30"
+        ],
+        "response_frame_client": "43",
+        "response_frame_server": "42",
+        "request_seq": 2023871015,
+        "request_len": 113,
+        "response_seq": 2412326609,
+        "response_ack": 2023871128,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.988122940063477,
+        "server_request_to_response_capture_ms": 28.870105743408203,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.617102,
+        "response_epoch": 1794486725.64609,
+        "response_ack_frame_client": "44"
+      },
+      {
+        "case": "delay20ms",
+        "id": 3,
+        "duration_ms": 53.335275,
+        "tuple": [
+          "192.168.107.3",
+          "43590",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "3",
+        "server_stream": "3",
+        "request_frames_client": [
+          "26"
+        ],
+        "request_frames_server": [
+          "26"
+        ],
+        "response_frame_client": "41",
+        "response_frame_server": "41",
+        "request_seq": 1905463721,
+        "request_len": 113,
+        "response_seq": 2007445819,
+        "response_ack": 1905463834,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 29.057979583740234,
+        "server_request_to_response_capture_ms": 28.985977172851562,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.616995,
+        "response_epoch": 1794486725.646053,
+        "response_ack_frame_client": "42"
+      },
+      {
+        "case": "delay20ms",
+        "id": 2,
+        "duration_ms": 53.279565,
+        "tuple": [
+          "192.168.107.3",
+          "43574",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "2",
+        "server_stream": "2",
+        "request_frames_client": [
+          "28"
+        ],
+        "request_frames_server": [
+          "28"
+        ],
+        "response_frame_client": "45",
+        "response_frame_server": "43",
+        "request_seq": 2095085491,
+        "request_len": 113,
+        "response_seq": 2658562161,
+        "response_ack": 2095085604,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 29.028892517089844,
+        "server_request_to_response_capture_ms": 28.923988342285156,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.617067,
+        "response_epoch": 1794486725.646096,
+        "response_ack_frame_client": "46"
+      },
+      {
+        "case": "delay20ms",
+        "id": 1,
+        "duration_ms": 53.255607,
+        "tuple": [
+          "192.168.107.3",
+          "43562",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "1",
+        "server_stream": "1",
+        "request_frames_client": [
+          "30"
+        ],
+        "request_frames_server": [
+          "29"
+        ],
+        "response_frame_client": "55",
+        "response_frame_server": "48",
+        "request_seq": 2471677618,
+        "request_len": 113,
+        "response_seq": 1587977094,
+        "response_ack": 2471677731,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 29.01005744934082,
+        "server_request_to_response_capture_ms": 28.88011932373047,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.617115,
+        "response_epoch": 1794486725.646125,
+        "response_ack_frame_client": "56"
+      },
+      {
+        "case": "delay20ms",
+        "id": 4,
+        "duration_ms": 53.190939,
+        "tuple": [
+          "192.168.107.3",
+          "43598",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "4",
+        "server_stream": "4",
+        "request_frames_client": [
+          "25"
+        ],
+        "request_frames_server": [
+          "25"
+        ],
+        "response_frame_client": "47",
+        "response_frame_server": "44",
+        "request_seq": 1162080816,
+        "request_len": 113,
+        "response_seq": 2732271521,
+        "response_ack": 1162080929,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 29.284954071044922,
+        "server_request_to_response_capture_ms": 29.15191650390625,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.616818,
+        "response_epoch": 1794486725.646103,
+        "response_ack_frame_client": "48"
+      },
+      {
+        "case": "delay20ms",
+        "id": 6,
+        "duration_ms": 53.145438,
+        "tuple": [
+          "192.168.107.3",
+          "43620",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "6",
+        "server_stream": "6",
+        "request_frames_client": [
+          "32"
+        ],
+        "request_frames_server": [
+          "32"
+        ],
+        "response_frame_client": "49",
+        "response_frame_server": "45",
+        "request_seq": 3263470390,
+        "request_len": 113,
+        "response_seq": 1577517537,
+        "response_ack": 3263470503,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.797149658203125,
+        "server_request_to_response_capture_ms": 28.679847717285156,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.617312,
+        "response_epoch": 1794486725.646109,
+        "response_ack_frame_client": "50"
+      },
+      {
+        "case": "delay20ms",
+        "id": 8,
+        "duration_ms": 52.827266,
+        "tuple": [
+          "192.168.107.3",
+          "43556",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "0",
+        "server_stream": "0",
+        "request_frames_client": [
+          "31"
+        ],
+        "request_frames_server": [
+          "31"
+        ],
+        "response_frame_client": "51",
+        "response_frame_server": "46",
+        "request_seq": 3187529859,
+        "request_len": 113,
+        "response_seq": 579451014,
+        "response_ack": 3187529972,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.959035873413086,
+        "server_request_to_response_capture_ms": 28.831005096435547,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486725.617155,
+        "response_epoch": 1794486725.646114,
+        "response_ack_frame_client": "52"
+      },
+      {
+        "case": "delay20ms",
+        "id": 661,
+        "duration_ms": 33.916936,
+        "tuple": [
+          "192.168.107.3",
+          "43556",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "0",
+        "server_stream": "0",
+        "request_frames_client": [
+          "1360"
+        ],
+        "request_frames_server": [
+          "1360"
+        ],
+        "response_frame_client": "1372",
+        "response_frame_server": "1372",
+        "request_seq": 3187539276,
+        "request_len": 115,
+        "response_seq": 579466184,
+        "response_ack": 3187539391,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 31.788110733032227,
+        "server_request_to_response_capture_ms": 31.721830368041992,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486728.087122,
+        "response_epoch": 1794486728.11891,
+        "response_ack_frame_client": "1376"
+      },
+      {
+        "case": "delay20ms",
+        "id": 660,
+        "duration_ms": 33.884269,
+        "tuple": [
+          "192.168.107.3",
+          "43574",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "2",
+        "server_stream": "2",
+        "request_frames_client": [
+          "1358"
+        ],
+        "request_frames_server": [
+          "1358"
+        ],
+        "response_frame_client": "1371",
+        "response_frame_server": "1371",
+        "request_seq": 2095094908,
+        "request_len": 115,
+        "response_seq": 2658577331,
+        "response_ack": 2095095023,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 31.898021697998047,
+        "server_request_to_response_capture_ms": 31.845808029174805,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486728.086989,
+        "response_epoch": 1794486728.118887,
+        "response_ack_frame_client": "1375"
+      },
+      {
+        "case": "delay20ms",
+        "id": 433,
+        "duration_ms": 33.775308,
+        "tuple": [
+          "192.168.107.3",
+          "43628",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "7",
+        "server_stream": "7",
+        "request_frames_client": [
+          "905"
+        ],
+        "request_frames_server": [
+          "905"
+        ],
+        "response_frame_client": "913",
+        "response_frame_server": "913",
+        "request_seq": 2023877212,
+        "request_len": 115,
+        "response_seq": 2412336599,
+        "response_ack": 2023877327,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 32.98497200012207,
+        "server_request_to_response_capture_ms": 32.920122146606445,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486727.239449,
+        "response_epoch": 1794486727.272434,
+        "response_ack_frame_client": "928"
+      },
+      {
+        "case": "delay20ms",
+        "id": 187,
+        "duration_ms": 33.622222,
+        "tuple": [
+          "192.168.107.3",
+          "43628",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "7",
+        "server_stream": "7",
+        "request_frames_client": [
+          "409"
+        ],
+        "request_frames_server": [
+          "409"
+        ],
+        "response_frame_client": "422",
+        "response_frame_server": "422",
+        "request_seq": 2023873647,
+        "request_len": 115,
+        "response_seq": 2412330864,
+        "response_ack": 2023873762,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 33.277034759521484,
+        "server_request_to_response_capture_ms": 33.17999839782715,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486726.304563,
+        "response_epoch": 1794486726.33784,
+        "response_ack_frame_client": "432"
+      }
+    ]
+  },
+  "delay20ms-loss1pct": {
+    "summary": {
+      "scenario": "probe",
+      "requests": 1000,
+      "completed_responses": 1000,
+      "io_errors": 0,
+      "do_errors": 0,
+      "body_errors": 0,
+      "close_errors": 0,
+      "timeouts": 0,
+      "http_error_responses": 0,
+      "status_codes": {
+        "200": 1000
+      },
+      "got_conn_new_events": 8,
+      "got_conn_reused_events": 992,
+      "fixture_slow_responses": 0,
+      "latency_all": {
+        "n": 1000,
+        "min_ms": 25.436722,
+        "p50_ms": 29.903833,
+        "p95_ms": 32.951545,
+        "p99_ms": 51.420329,
+        "max_ms": 259.310468
+      },
+      "latency_completed": {
+        "n": 1000,
+        "min_ms": 25.436722,
+        "p50_ms": 29.903833,
+        "p95_ms": 32.951545,
+        "p99_ms": 51.420329,
+        "max_ms": 259.310468
+      },
+      "latency_errors": {
+        "n": 0,
+        "min_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "p99_ms": null,
+        "max_ms": null
+      },
+      "headers": {
+        "n": 1000,
+        "min_ms": 25.411388,
+        "p50_ms": 29.825415,
+        "p95_ms": 32.823627,
+        "p99_ms": 51.363744,
+        "max_ms": 259.279884
+      },
+      "body": {
+        "n": 1000,
+        "min_ms": 0.002417,
+        "p50_ms": 0.019542,
+        "p95_ms": 0.234837,
+        "p99_ms": 0.502841,
+        "max_ms": 3.8676
+      },
+      "phases": {
+        "acquire": {
+          "n": 1000,
+          "min_ms": 0.0011250000000000001,
+          "p50_ms": 0.005207999999999999,
+          "p95_ms": 0.10779300000000001,
+          "p99_ms": 0.619967,
+          "max_ms": 23.264356
+        },
+        "connect": {
+          "n": 8,
+          "min_ms": 22.582679,
+          "p50_ms": 22.68393,
+          "p95_ms": 22.960894000000003,
+          "p99_ms": 22.960894000000003,
+          "max_ms": 22.960894000000003
+        },
+        "dns": {
+          "n": 8,
+          "min_ms": 0.13916900000000001,
+          "p50_ms": 0.302213,
+          "p95_ms": 0.485841,
+          "p99_ms": 0.485841,
+          "max_ms": 0.485841
+        },
+        "request_to_first_byte": {
+          "n": 1000,
+          "min_ms": 25.381389000000002,
+          "p50_ms": 29.694288,
+          "p95_ms": 32.699541999999994,
+          "p99_ms": 33.492179,
+          "max_ms": 259.167174
+        },
+        "resolver_socket": {
+          "n": 0,
+          "min_ms": null,
+          "p50_ms": null,
+          "p95_ms": null,
+          "p99_ms": null,
+          "max_ms": null
+        },
+        "tls": {
+          "n": 0,
+          "min_ms": null,
+          "p50_ms": null,
+          "p95_ms": null,
+          "p99_ms": null,
+          "max_ms": null
+        }
+      }
+    },
+    "retransmitted_requests": 4,
+    "retry_latency": {
+      "n": 4,
+      "p50_ms": 257.077642,
+      "p95_ms": 259.310468,
+      "p99_ms": 259.310468,
+      "max_ms": 259.310468
+    },
+    "no_retry_latency": {
+      "n": 996,
+      "p50_ms": 29.899624,
+      "p95_ms": 32.924504,
+      "p99_ms": 34.853492,
+      "max_ms": 51.768501
+    },
+    "captures": [
+      {
+        "case": "delay20ms-loss1pct",
+        "side": "client",
+        "pcap_frames": 2055,
+        "captured": 2055,
+        "received_by_filter": 2079,
+        "dropped_by_kernel": 0,
+        "retransmission_frames": 4,
+        "http_ids": 1000,
+        "response_frames": 1000,
+        "sha256": "19bba2b45fb891ca928eb09c0cb847621e0cdc44a8ae3ff89588c28c48ad9256"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "side": "server",
+        "pcap_frames": 2055,
+        "captured": 2055,
+        "received_by_filter": 2079,
+        "dropped_by_kernel": 0,
+        "retransmission_frames": 4,
+        "http_ids": 1000,
+        "response_frames": 1000,
+        "sha256": "f09bd2349338a87e584b737ffd7bda28851887ec7e0534867e20b747982311ab"
+      }
+    ],
+    "counters": {
+      "client": {
+        "TcpRetransSegs": 4,
+        "TcpExtTCPTimeouts": 0,
+        "TcpExtTCPLossProbes": 4,
+        "TcpExtTCPLossProbeRecovery": 0,
+        "TcpExtTCPSynRetrans": 0
+      },
+      "server": {
+        "TcpRetransSegs": 4,
+        "TcpExtTCPTimeouts": 0,
+        "TcpExtTCPLossProbes": 4,
+        "TcpExtTCPLossProbeRecovery": 4,
+        "TcpExtTCPSynRetrans": 0
+      }
+    },
+    "slowest": [
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 886,
+        "duration_ms": 259.310468,
+        "tuple": [
+          "192.168.107.3",
+          "53198",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "7",
+        "server_stream": "7",
+        "request_frames_client": [
+          "1816",
+          "1929"
+        ],
+        "request_frames_server": [
+          "1816",
+          "1929"
+        ],
+        "response_frame_client": "1937",
+        "response_frame_server": "1937",
+        "request_seq": 2881681749,
+        "request_len": 115,
+        "response_seq": 3326809083,
+        "response_ack": 2881681864,
+        "response_len": 185,
+        "request_retransmissions": 1,
+        "request_to_response_capture_ms": 259.0658664703369,
+        "server_request_to_response_capture_ms": 259.0169906616211,
+        "retry_after_ms": 234.11297798156738,
+        "first_request_epoch": 1794486734.75461,
+        "response_epoch": 1794486735.013676,
+        "response_ack_frame_client": "1939"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 61,
+        "duration_ms": 257.150227,
+        "tuple": [
+          "192.168.107.3",
+          "53156",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "3",
+        "server_stream": "3",
+        "request_frames_client": [
+          "156",
+          "246"
+        ],
+        "request_frames_server": [
+          "155",
+          "246"
+        ],
+        "response_frame_client": "260",
+        "response_frame_server": "260",
+        "request_seq": 13785717,
+        "request_len": 114,
+        "response_seq": 3330638637,
+        "response_ack": 13785831,
+        "response_len": 185,
+        "request_retransmissions": 1,
+        "request_to_response_capture_ms": 256.9758892059326,
+        "server_request_to_response_capture_ms": 256.9129467010498,
+        "retry_after_ms": 235.58497428894043,
+        "first_request_epoch": 1794486731.575709,
+        "response_epoch": 1794486731.832685,
+        "response_ack_frame_client": "264"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 64,
+        "duration_ms": 257.077642,
+        "tuple": [
+          "192.168.107.3",
+          "53146",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "1",
+        "server_stream": "1",
+        "request_frames_client": [
+          "158",
+          "245"
+        ],
+        "request_frames_server": [
+          "158",
+          "245"
+        ],
+        "response_frame_client": "259",
+        "response_frame_server": "259",
+        "request_seq": 2717953307,
+        "request_len": 114,
+        "response_seq": 2257530869,
+        "response_ack": 2717953421,
+        "response_len": 185,
+        "request_retransmissions": 1,
+        "request_to_response_capture_ms": 256.90412521362305,
+        "server_request_to_response_capture_ms": 256.85906410217285,
+        "retry_after_ms": 235.52703857421875,
+        "first_request_epoch": 1794486731.57576,
+        "response_epoch": 1794486731.832664,
+        "response_ack_frame_client": "263"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 634,
+        "duration_ms": 256.773638,
+        "tuple": [
+          "192.168.107.3",
+          "53174",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "5",
+        "server_stream": "6",
+        "request_frames_client": [
+          "1306",
+          "1405"
+        ],
+        "request_frames_server": [
+          "1306",
+          "1405"
+        ],
+        "response_frame_client": "1420",
+        "response_frame_server": "1420",
+        "request_seq": 920957236,
+        "request_len": 115,
+        "response_seq": 852170686,
+        "response_ack": 920957351,
+        "response_len": 185,
+        "request_retransmissions": 1,
+        "request_to_response_capture_ms": 256.6039562225342,
+        "server_request_to_response_capture_ms": 256.55293464660645,
+        "retry_after_ms": 235.9299659729004,
+        "first_request_epoch": 1794486733.759015,
+        "response_epoch": 1794486734.015619,
+        "response_ack_frame_client": "1422"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 2,
+        "duration_ms": 51.768501,
+        "tuple": [
+          "192.168.107.3",
+          "53174",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "5",
+        "server_stream": "6",
+        "request_frames_client": [
+          "29"
+        ],
+        "request_frames_server": [
+          "30"
+        ],
+        "response_frame_client": "53",
+        "response_frame_server": "47",
+        "request_seq": 920948051,
+        "request_len": 113,
+        "response_seq": 852155886,
+        "response_ack": 920948164,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.04279327392578,
+        "server_request_to_response_capture_ms": 27.94504165649414,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365255,
+        "response_epoch": 1794486731.393298,
+        "response_ack_frame_client": "54"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 1,
+        "duration_ms": 51.64004,
+        "tuple": [
+          "192.168.107.3",
+          "53156",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "3",
+        "server_stream": "3",
+        "request_frames_client": [
+          "28"
+        ],
+        "request_frames_server": [
+          "29"
+        ],
+        "response_frame_client": "47",
+        "response_frame_server": "44",
+        "request_seq": 13784920,
+        "request_len": 113,
+        "response_seq": 3330637342,
+        "response_ack": 13785033,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.03206443786621,
+        "server_request_to_response_capture_ms": 27.94504165649414,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365254,
+        "response_epoch": 1794486731.393286,
+        "response_ack_frame_client": "48"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 6,
+        "duration_ms": 51.590248,
+        "tuple": [
+          "192.168.107.3",
+          "53198",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "7",
+        "server_stream": "7",
+        "request_frames_client": [
+          "27"
+        ],
+        "request_frames_server": [
+          "27"
+        ],
+        "response_frame_client": "51",
+        "response_frame_server": "46",
+        "request_seq": 2881668769,
+        "request_len": 113,
+        "response_seq": 3326788178,
+        "response_ack": 2881668882,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.09000015258789,
+        "server_request_to_response_capture_ms": 28.0148983001709,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365204,
+        "response_epoch": 1794486731.393294,
+        "response_ack_frame_client": "52"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 5,
+        "duration_ms": 51.536497,
+        "tuple": [
+          "192.168.107.3",
+          "53170",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "4",
+        "server_stream": "4",
+        "request_frames_client": [
+          "26"
+        ],
+        "request_frames_server": [
+          "26"
+        ],
+        "response_frame_client": "49",
+        "response_frame_server": "45",
+        "request_seq": 1576534837,
+        "request_len": 113,
+        "response_seq": 4288711747,
+        "response_ack": 1576534950,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.100967407226562,
+        "server_request_to_response_capture_ms": 28.028011322021484,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365189,
+        "response_epoch": 1794486731.39329,
+        "response_ack_frame_client": "50"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 7,
+        "duration_ms": 51.495788,
+        "tuple": [
+          "192.168.107.3",
+          "53154",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "2",
+        "server_stream": "2",
+        "request_frames_client": [
+          "31"
+        ],
+        "request_frames_server": [
+          "31"
+        ],
+        "response_frame_client": "41",
+        "response_frame_server": "41",
+        "request_seq": 3516348925,
+        "request_len": 113,
+        "response_seq": 13616647,
+        "response_ack": 3516349038,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 27.9390811920166,
+        "server_request_to_response_capture_ms": 27.868986129760742,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365314,
+        "response_epoch": 1794486731.393253,
+        "response_ack_frame_client": "42"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 4,
+        "duration_ms": 51.437662,
+        "tuple": [
+          "192.168.107.3",
+          "53146",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "1",
+        "server_stream": "1",
+        "request_frames_client": [
+          "32"
+        ],
+        "request_frames_server": [
+          "32"
+        ],
+        "response_frame_client": "43",
+        "response_frame_server": "42",
+        "request_seq": 2717952510,
+        "request_len": 113,
+        "response_seq": 2257529574,
+        "response_ack": 2717952623,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 27.842044830322266,
+        "server_request_to_response_capture_ms": 27.78005599975586,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365434,
+        "response_epoch": 1794486731.393276,
+        "response_ack_frame_client": "44"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 3,
+        "duration_ms": 51.420329,
+        "tuple": [
+          "192.168.107.3",
+          "53182",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "6",
+        "server_stream": "5",
+        "request_frames_client": [
+          "25"
+        ],
+        "request_frames_server": [
+          "25"
+        ],
+        "response_frame_client": "55",
+        "response_frame_server": "48",
+        "request_seq": 753505209,
+        "request_len": 113,
+        "response_seq": 1834014690,
+        "response_ack": 753505322,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.162002563476562,
+        "server_request_to_response_capture_ms": 28.069019317626953,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.36514,
+        "response_epoch": 1794486731.393302,
+        "response_ack_frame_client": "56"
+      },
+      {
+        "case": "delay20ms-loss1pct",
+        "id": 8,
+        "duration_ms": 51.373078,
+        "tuple": [
+          "192.168.107.3",
+          "53134",
+          "192.168.107.2",
+          "8080"
+        ],
+        "client_stream": "0",
+        "server_stream": "0",
+        "request_frames_client": [
+          "30"
+        ],
+        "request_frames_server": [
+          "28"
+        ],
+        "response_frame_client": "45",
+        "response_frame_server": "43",
+        "request_seq": 753448974,
+        "request_len": 113,
+        "response_seq": 3723023945,
+        "response_ack": 753449087,
+        "response_len": 185,
+        "request_retransmissions": 0,
+        "request_to_response_capture_ms": 28.01990509033203,
+        "server_request_to_response_capture_ms": 27.950048446655273,
+        "retry_after_ms": null,
+        "first_request_epoch": 1794486731.365262,
+        "response_epoch": 1794486731.393282,
+        "response_ack_frame_client": "46"
+      }
+    ]
+  }
+}

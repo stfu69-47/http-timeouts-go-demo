@@ -1,0 +1,78 @@
+ Image timeoutlab-network:timeoutlab-20261112123155-5898-26216 Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 772B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.05kB done
+#2 DONE 0.1s
+
+#3 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#3 DONE 0.8s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.2s done
+#4 DONE 0.3s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 CACHED
+
+#5 [internal] load metadata for docker.io/library/debian:bookworm-slim
+#5 ...
+
+#6 [internal] load metadata for docker.io/library/golang:1.27.4-bookworm
+#6 DONE 0.5s
+
+#5 [internal] load metadata for docker.io/library/debian:bookworm-slim
+#5 DONE 0.5s
+
+#7 [build 1/5] FROM docker.io/library/golang:1.27.4-bookworm@sha256:4fa7c968ba93f1635670522dbb01a2c78150443e1385746924566079f36570ea
+#7 resolve docker.io/library/golang:1.27.4-bookworm@sha256:4fa7c968ba93f1635670522dbb01a2c78150443e1385746924566079f36570ea 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-1 1/5] FROM docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc
+#8 resolve docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 394B done
+#9 DONE 0.0s
+
+#10 [build 2/5] WORKDIR /src
+#10 CACHED
+
+#11 [build 3/5] COPY go.mod ./
+#11 CACHED
+
+#12 [build 4/5] COPY *.go ./
+#12 CACHED
+
+#13 [stage-1 4/5] COPY --from=build /out/build-go-version.txt /usr/local/share/timeoutlab-build-go-version.txt
+#13 CACHED
+
+#14 [build 5/5] RUN mkdir -p /out     && go version > /out/build-go-version.txt     && go build -buildvcs=false -trimpath -o /out/timeoutlab .
+#14 CACHED
+
+#15 [stage-1 2/5] RUN apt-get update     && apt-get install -y --no-install-recommends        ca-certificates coreutils iproute2 netcat-openbsd procps tcpdump tshark     && rm -rf /var/lib/apt/lists/*
+#15 CACHED
+
+#16 [stage-1 3/5] COPY --from=build /out/timeoutlab /usr/local/bin/timeoutlab
+#16 CACHED
+
+#17 [stage-1 5/5] WORKDIR /data
+#17 CACHED
+
+#18 exporting to image
+#18 exporting layers done
+#18 exporting manifest sha256:ecba46e0e5badcf012f4c9c0f56157bed0700e2c8b72b387ffe481e7f307c881 0.0s done
+#18 exporting config sha256:d20567a9175765fcf6e2673f22ac1f05336dfddaf33c2d1fab87c765f8d0e726 0.0s done
+#18 exporting attestation manifest sha256:ce80e5604fa94d5b18682d5f1c5140ab9549614fa7b63e86c60967de1269403f 0.0s done
+#18 exporting manifest list sha256:17cf689b11076ebb449aeff32eb82206a974e615b195b742abbc3188d8928d78 0.0s done
+#18 naming to docker.io/library/timeoutlab-network:timeoutlab-20261112123155-5898-26216 done
+#18 unpacking to docker.io/library/timeoutlab-network:timeoutlab-20261112123155-5898-26216 done
+#18 DONE 0.1s
+
+#19 resolving provenance for metadata file
+#19 DONE 0.0s
+ Image timeoutlab-network:timeoutlab-20261112123155-5898-26216 Built 

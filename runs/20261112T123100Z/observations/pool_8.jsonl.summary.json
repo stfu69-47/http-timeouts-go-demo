@@ -1,0 +1,107 @@
+{
+  "scenario": "probe",
+  "requests": 100,
+  "completed_responses": 100,
+  "io_errors": 0,
+  "do_errors": 0,
+  "body_errors": 0,
+  "close_errors": 0,
+  "timeouts": 0,
+  "http_error_responses": 0,
+  "status_codes": {
+    "200": 100
+  },
+  "got_conn_new_events": 8,
+  "got_conn_reused_events": 92,
+  "fixture_slow_responses": 0,
+  "latency_all": {
+    "n": 100,
+    "min_ms": 25.880521,
+    "p50_ms": 28.721397,
+    "p95_ms": 30.310172,
+    "p99_ms": 30.469216,
+    "max_ms": 30.552467
+  },
+  "latency_completed": {
+    "n": 100,
+    "min_ms": 25.880521,
+    "p50_ms": 28.721397,
+    "p95_ms": 30.310172,
+    "p99_ms": 30.469216,
+    "max_ms": 30.552467
+  },
+  "latency_errors": {
+    "n": 0,
+    "min_ms": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null,
+    "max_ms": null
+  },
+  "headers": {
+    "n": 100,
+    "min_ms": 25.850396,
+    "p50_ms": 28.708189,
+    "p95_ms": 30.298672,
+    "p99_ms": 30.461383,
+    "max_ms": 30.545467
+  },
+  "body": {
+    "n": 100,
+    "min_ms": 0.005959,
+    "p50_ms": 0.010833,
+    "p95_ms": 0.108418,
+    "p99_ms": 0.162753,
+    "max_ms": 0.281713
+  },
+  "phases": {
+    "acquire": {
+      "n": 100,
+      "min_ms": 0.0022919999999999998,
+      "p50_ms": 0.0036250000000000015,
+      "p95_ms": 0.614468,
+      "p99_ms": 0.997265,
+      "max_ms": 1.220186
+    },
+    "connect": {
+      "n": 8,
+      "min_ms": 0.23079499999999997,
+      "p50_ms": 0.689677,
+      "p95_ms": 1.113184,
+      "p99_ms": 1.113184,
+      "max_ms": 1.113184
+    },
+    "dns": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "request_to_first_byte": {
+      "n": 100,
+      "min_ms": 25.514223,
+      "p50_ms": 28.611188,
+      "p95_ms": 30.262838,
+      "p99_ms": 30.391715,
+      "max_ms": 30.488884
+    },
+    "resolver_socket": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    },
+    "tls": {
+      "n": 0,
+      "min_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "max_ms": null
+    }
+  }
+}

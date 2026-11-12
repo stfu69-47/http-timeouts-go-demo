@@ -1,0 +1,7 @@
+go-test=0
+go-race=0
+go-vet=0
+go-build=0
+suite=0
+observation=0
+network=0

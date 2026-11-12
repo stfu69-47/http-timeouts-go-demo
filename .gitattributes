@@ -1,0 +1,3 @@
+# Preserve measured files byte for byte, including on platforms using CRLF.
+runs/20261112T123100Z/** -text
+runs/20261112T123100Z/**/*.pcap binary

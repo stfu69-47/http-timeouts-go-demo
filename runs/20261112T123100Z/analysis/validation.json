@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "records": 4890,
+  "io_errors": 40,
+  "checks": [
+    {
+      "group": "suite",
+      "scenario": "baseline",
+      "records": 200,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "0ebe3e07ea7721d2c369f3923961ceeda8f168e7aa79370ac7f06ee212cb1482"
+    },
+    {
+      "group": "suite",
+      "scenario": "body_timeout",
+      "records": 20,
+      "io_errors": 20,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "c14e70b981c64a5a4bef226a5b88442bfa7afc101259af8d0ff77450062ab746"
+    },
+    {
+      "group": "suite",
+      "scenario": "dns_delay",
+      "records": 50,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "eadd72edede843ea89b68693d716d481eafd5f49835deb39a19a9a8ad6f1efc2"
+    },
+    {
+      "group": "suite",
+      "scenario": "header_timeout",
+      "records": 20,
+      "io_errors": 20,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "567221ca6d0de3451c822e1d6aa77c2dacd116118baa640db98daf6a3b140990"
+    },
+    {
+      "group": "suite",
+      "scenario": "pool_1",
+      "records": 100,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "e22fe9305b079203ee5e5889230d4a0c010de39352a840f156bc3d71da9dba03"
+    },
+    {
+      "group": "suite",
+      "scenario": "pool_8",
+      "records": 100,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "87035fe7ed7c92c3d42aa2aa2267c3281713e79f8f40a46d19ab20555169557a"
+    },
+    {
+      "group": "suite",
+      "scenario": "rare_body",
+      "records": 500,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "18f7f4b01e2a277cf5dda4f14cc557dd5c5adc38cf3e7977c2acf94f6c104ddd"
+    },
+    {
+      "group": "suite",
+      "scenario": "rare_headers",
+      "records": 500,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "f13af4a35fdd668ea1ad8de63feb38acbe877dfc1671f8a77e6cef58b635554e"
+    },
+    {
+      "group": "suite",
+      "scenario": "tls_no_reuse",
+      "records": 100,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "ca9805b6ec21b65dde37b3f8128a6e4e573292c017bade0ebafa7e7c271162fe"
+    },
+    {
+      "group": "suite",
+      "scenario": "tls_reuse",
+      "records": 100,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "e1f1813985e324a459c1a4c511ddf32b1e43edbd993454c1d79ccd275a29ef6f"
+    },
+    {
+      "group": "observations",
+      "scenario": "pool_1",
+      "records": 100,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "0b55da5ea69f5761c2e6e369a334104807cd54f2b30af05b884d74de5272b73f"
+    },
+    {
+      "group": "observations",
+      "scenario": "pool_8",
+      "records": 100,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "38d2144f51c310d968ad0e1b9ab3b6f3140649eeeac39210e1f3aab82bee79a2"
+    },
+    {
+      "group": "network",
+      "scenario": "baseline",
+      "records": 1000,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "f7a80b441ef1db1b651615e7502cd6a611e9c37abdf5068354842d7692a8d7ba"
+    },
+    {
+      "group": "network",
+      "scenario": "delay20ms-loss1pct",
+      "records": 1000,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "00a8e0f5cffb684408d6bccd5c942c248625ba7ff4476255c210118159279dee"
+    },
+    {
+      "group": "network",
+      "scenario": "delay20ms",
+      "records": 1000,
+      "io_errors": 0,
+      "unique_contiguous_ids": true,
+      "percentiles_match": true,
+      "sha256": "357847d19cc06b5ad6e7de98574441e2fe254a89b7ad9d1529b63b533fa7baa6"
+    }
+  ],
+  "sockets": {
+    "pool_1.ss.txt": {
+      "samples": 26,
+      "established_rows": 52
+    },
+    "pool_8.ss.txt": {
+      "samples": 4,
+      "established_rows": 50
+    }
+  },
+  "network_status": {
+    "measurements_complete": "true",
+    "exit_status": "0",
+    "cleanup_exit_status": "0",
+    "finished_utc": "2026-11-12T12:32:16Z"
+  },
+  "captures": [
+    {
+      "case": "baseline",
+      "side": "client",
+      "pcap_frames": 2040,
+      "captured": 2040,
+      "received_by_filter": 2064,
+      "dropped_by_kernel": 0,
+      "retransmission_frames": 0,
+      "http_ids": 1000,
+      "response_frames": 1000,
+      "sha256": "8bd0ad740fcce8f9347e0b1f776bfdf8f7197461cf738586ad2d50d00a0112e2"
+    },
+    {
+      "case": "baseline",
+      "side": "server",
+      "pcap_frames": 2040,
+      "captured": 2040,
+      "received_by_filter": 2064,
+      "dropped_by_kernel": 0,
+      "retransmission_frames": 0,
+      "http_ids": 1000,
+      "response_frames": 1000,
+      "sha256": "b666278972b366ff6781488e9f4e621a37b22cc69370254d1a053306184a8d01"
+    },
+    {
+      "case": "delay20ms",
+      "side": "client",
+      "pcap_frames": 2040,
+      "captured": 2040,
+      "received_by_filter": 2064,
+      "dropped_by_kernel": 0,
+      "retransmission_frames": 0,
+      "http_ids": 1000,
+      "response_frames": 1000,
+      "sha256": "2a9d2dbb8ac3ffd13ed407171c89d8f4f5e0aa4a81274f3d0f3b362088849236"
+    },
+    {
+      "case": "delay20ms",
+      "side": "server",
+      "pcap_frames": 2040,
+      "captured": 2040,
+      "received_by_filter": 2064,
+      "dropped_by_kernel": 0,
+      "retransmission_frames": 0,
+      "http_ids": 1000,
+      "response_frames": 1000,
+      "sha256": "c69c7438a0fc283e9a0f515f560883ce04b258e709a7011b37f038cfc4db2f07"
+    },
+    {
+      "case": "delay20ms-loss1pct",
+      "side": "client",
+      "pcap_frames": 2055,
+      "captured": 2055,
+      "received_by_filter": 2079,
+      "dropped_by_kernel": 0,
+      "retransmission_frames": 4,
+      "http_ids": 1000,
+      "response_frames": 1000,
+      "sha256": "19bba2b45fb891ca928eb09c0cb847621e0cdc44a8ae3ff89588c28c48ad9256"
+    },
+    {
+      "case": "delay20ms-loss1pct",
+      "side": "server",
+      "pcap_frames": 2055,
+      "captured": 2055,
+      "received_by_filter": 2079,
+      "dropped_by_kernel": 0,
+      "retransmission_frames": 4,
+      "http_ids": 1000,
+      "response_frames": 1000,
+      "sha256": "f09bd2349338a87e584b737ffd7bda28851887ec7e0534867e20b747982311ab"
+    }
+  ]
+}

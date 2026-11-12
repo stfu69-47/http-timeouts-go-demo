@@ -1,0 +1,49 @@
+{
+  "source": "<KIT_ROOT>/runs/20261112T123100Z/suite",
+  "method": "nearest rank; pool request at ceil(n*0.5)-1 after duration sort",
+  "sha256": {
+    "baseline.jsonl": "0ebe3e07ea7721d2c369f3923961ceeda8f168e7aa79370ac7f06ee212cb1482",
+    "body_timeout.jsonl": "c14e70b981c64a5a4bef226a5b88442bfa7afc101259af8d0ff77450062ab746",
+    "dns_delay.jsonl": "eadd72edede843ea89b68693d716d481eafd5f49835deb39a19a9a8ad6f1efc2",
+    "header_timeout.jsonl": "567221ca6d0de3451c822e1d6aa77c2dacd116118baa640db98daf6a3b140990",
+    "metadata.json": "e52022d18afac2230f3959182cc27706b788b6cc010b6dccfe89ba86796eea52",
+    "pool_1.jsonl": "e22fe9305b079203ee5e5889230d4a0c010de39352a840f156bc3d71da9dba03",
+    "pool_8.jsonl": "87035fe7ed7c92c3d42aa2aa2267c3281713e79f8f40a46d19ab20555169557a",
+    "rare_body.jsonl": "18f7f4b01e2a277cf5dda4f14cc557dd5c5adc38cf3e7977c2acf94f6c104ddd",
+    "rare_headers.jsonl": "f13af4a35fdd668ea1ad8de63feb38acbe877dfc1671f8a77e6cef58b635554e",
+    "summary.json": "d418f7d319983f4a51f88ab9a82749d892783fee1e759d47a92d5d9f215cde01",
+    "tls_no_reuse.jsonl": "ca9805b6ec21b65dde37b3f8128a6e4e573292c017bade0ebafa7e7c271162fe",
+    "tls_reuse.jsonl": "e1f1813985e324a459c1a4c511ddf32b1e43edbd993454c1d79ccd275a29ef6f"
+  },
+  "latency_scenarios": [
+    "baseline",
+    "rare_headers",
+    "rare_body"
+  ],
+  "pool_requests": [
+    {
+      "scenario": "pool_1",
+      "request_id": 46,
+      "duration_ms": 212.654125,
+      "points_ms": [
+        0,
+        186.220542,
+        186.23175,
+        212.627167,
+        212.654125
+      ]
+    },
+    {
+      "scenario": "pool_8",
+      "request_id": 97,
+      "duration_ms": 27.044041,
+      "points_ms": [
+        0,
+        0.032291,
+        0.046958,
+        27.027541,
+        27.044041
+      ]
+    }
+  ]
+}

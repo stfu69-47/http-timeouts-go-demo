@@ -1,0 +1,4 @@
+measurements_complete=true
+exit_status=0
+cleanup_exit_status=0
+finished_utc=2026-11-12T12:32:16Z

@@ -1,0 +1,61 @@
+name: timeoutlab-20261112123155-5898-26216
+services:
+  client:
+    cap_add:
+      - NET_RAW
+    command:
+      - sleep
+      - infinity
+    depends_on:
+      server:
+        condition: service_healthy
+        required: true
+    image: timeoutlab-network:timeoutlab-20261112123155-5898-26216
+    init: true
+    networks:
+      lab: null
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 5s
+    volumes:
+      - type: bind
+        source: <KIT_ROOT>/runs/20261112T123100Z/network/run-20261112T123155Z-6n9IQE
+        target: /data
+        bind:
+          create_host_path: false
+  server:
+    build:
+      context: <KIT_ROOT>/http-timeout-lab
+      dockerfile: network/Dockerfile
+      args:
+        GO_VERSION: 1.27.4
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    command:
+      - timeoutlab
+      - serve
+      - -listen
+      - :8080
+      - -header-delay
+      - 5ms
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - test -f /tmp/timeoutlab-ready || (nc -z -w 1 127.0.0.1 8080 && touch /tmp/timeoutlab-ready)
+      timeout: 2s
+      interval: 1s
+      retries: 30
+      start_period: 2s
+    image: timeoutlab-network:timeoutlab-20261112123155-5898-26216
+    init: true
+    networks:
+      lab: null
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 5s
+networks:
+  lab:
+    name: timeoutlab-20261112123155-5898-26216_lab
+    driver: bridge
+    internal: true
